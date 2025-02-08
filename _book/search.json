@@ -10,23 +10,53 @@
     ]
   },
   {
+    "objectID": "Reading data.html",
+    "href": "Reading data.html",
+    "title": "1  Reading data",
+    "section": "",
+    "text": "1.1 Types of data - structured and unstructured\nReading data is the first step to extract information from it. Data can exist broadly in two formats:\nStructured data is typically stored in a tabular form, where rows in the data correspond to “observations” and columns correspond to “variables”. For example, the following dataset contains 5 observations, where each observation (or row) consists of information about a movie. The variables (or columns) contain different pieces of information about a given movie. As all variables for a given row are related to the same movie, the data below is also called relational data.\nUnstructured data is data that is not organized in any pre-defined manner. Examples of unstructured data can be text files, audio/video files, images, Internet of Things (IoT) data, etc. Unstructured data is relatively harder to analyze as most of the analytical methods and tools are oriented towards structured data. However, an unstructured data can be used to obtain structured data, which in turn can be analyzed. For example, an image can be converted to an array of pixels - which will be structured data. Machine learning algorithms can then be used on the array to classify the image as that of a dog or a cat.\nIn this course, we will focus on analyzing structured data.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Reading data</span>"
+    ]
+  },
+  {
+    "objectID": "Reading data.html#types-of-data---structured-and-unstructured",
+    "href": "Reading data.html#types-of-data---structured-and-unstructured",
+    "title": "1  Reading data",
+    "section": "",
+    "text": "Structured data, and\nUnstructured data.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Reading data</span>"
+    ]
+  },
+  {
+    "objectID": "Reading data.html#reading-a-csv-file-with-pandas",
+    "href": "Reading data.html#reading-a-csv-file-with-pandas",
+    "title": "1  Reading data",
+    "section": "1.2 Reading a csv file with Pandas",
+    "text": "1.2 Reading a csv file with Pandas\nStructured data can be stored in a variety of formats. The most popular format is data_file_name.csv, where the extension csv stands for comma separated values. The variable values of each observation are separated by a comma in a .csv file. In other words, the delimiter is a comma in a csv file. However, the comma is not visible when a .csv file is opened with Microsoft Excel.\n\n1.2.1 Using the read_csv function\nWe will use functions from the Pandas library of Python to read data. Let us import Pandas to use its functions.\n\nimport pandas as pd\n\nNote that pd is the acronym that we will use to call a Pandas function. This acronym can be anything as desired by the user.\nThe function to read a csv file is read_csv(). It reads the dataset into an object of type Pandas DataFrame. Let us read the dataset movie_ratings.csv in Python.\n\nmovie_ratings = pd.read_csv('movie_ratings.csv')\n\nThe built-in python function type can be used to check the dataype of an object:\n\ntype(movie_ratings)",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Reading data</span>"
+    ]
+  },
+  {
     "objectID": "intro.html",
     "href": "intro.html",
-    "title": "1  Introduction",
+    "title": "2  Introduction",
     "section": "",
     "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
     ]
   },
   {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "2  Summary",
+    "title": "3  Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Summary</span>"
     ]
   },
   {
